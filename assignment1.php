@@ -1,7 +1,7 @@
 <?php
 
-ECHO "My Name is <u>Peter</u><br>";
-echo "I am a kenyan<br>";
+ECHO "My Name is <u>Peter</u><br><br>";
+echo "<i>I am a kenyan<br></i><br>";
 EcHo "My proffesion is PHP Programmer <br>";
 
 ?>
