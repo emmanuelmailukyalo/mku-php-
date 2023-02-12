@@ -23,15 +23,15 @@ $records = array(
   array("Column 1 Row 1", "Column 2 Row 1", "Column 3 Row 1"),
   array("Column 1 Row 2", "Column 2 Row 2", "Column 3 Row 2"),
   array("Column 1 Row 3", "Column 2 Row 3", "Column 3 Row 3"),
-  array("Column 1 Row 4", "Column 2 Row 4", "Column 3 Row 4")
+//   array("Column 1 Row 4", "Column 2 Row 4", "Column 3 Row 4")
 );
 ?>
 
 <table>
   <tr>
-    <th>Column 1</th>
-    <th>Column 2</th> 
-    <th>Column 3</th>
+    <th>Name</th>
+    <th>City</th> 
+    <th>Telephone</th>
   </tr>
   <?php
   foreach ($records as $record) {
