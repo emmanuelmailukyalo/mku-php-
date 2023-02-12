@@ -1,11 +1,16 @@
-<?php
 
-echo "list of cities in kenya"
+<?php
+ 
+ echo "List of cities in Kenya";
+
+$cities = array("Nairobi", "Kisumu", "Mombasa");
 
 echo "<ul>";
-    echo "<li>Nairobi</li>" ;
-    echo "<li>kisumu</li>";
-    echo "<li>Mombasa</li>";
+
+foreach($cities as $city) {
+    echo "<li>" . $city . "</li>";
+}
+
 echo "</ul>";
 
 ?>
