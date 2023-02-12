@@ -7,8 +7,10 @@ table, th, td {
   border-collapse: collapse;
 }
 th {
-  background-color: blue;
-  color: white;
+  background-color: white;
+  color: blue;
+  font-size: 18px ;
+  font-family: Tahoma ;
 }
 td {
   padding: 5px;
