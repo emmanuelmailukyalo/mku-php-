@@ -20,9 +20,9 @@ td {
 
 <?php
 $records = array(
-  array("Column 1 Row 1", "Column 2 Row 1", "Column 3 Row 1"),
-  array("Column 1 Row 2", "Column 2 Row 2", "Column 3 Row 2"),
-  array("Column 1 Row 3", "Column 2 Row 3", "Column 3 Row 3"),
+  array("James Ukoo", "Washington", "0440-798000"),
+  array("Jerry Willy ", "New Yolk ", "0493-21300"),
+  array("Terry ", "Nairobi ", "020-390050"),
 );
 ?>
 
