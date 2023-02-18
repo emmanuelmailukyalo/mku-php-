@@ -14,9 +14,10 @@
   
   echo "Full name: $name <br>";
   echo "Registration number: $regno <br>";
-  echo "Course Title: $course <br>";
+  echo "Course Title: $course <br><br>";
+  // total marks print 
   echo "Marks scored in units: $totalmarks <br>";
-
+// average marks print 
   echo "average marks: $averagemarks";
 
 ?>
