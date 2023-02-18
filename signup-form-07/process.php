@@ -10,14 +10,14 @@
   $ma = $_POST['ma'];
   
  $totalmarks = $ict+$itb+$itp+$ma;
-  
+ $averagemarks = $totalmarks/4;
   
   echo "Full name: $name <br>";
   echo "Registration number: $regno <br>";
   echo "Course Title: $course <br>";
-  echo "Marks scored in units: <br>";
-  echo "Total marks: $totalmarks <br>";
- 
+  echo "Marks scored in units: $totalmarks <br>";
+
+  echo "average marks: $averagemarks";
 
 ?>
  
