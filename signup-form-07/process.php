@@ -18,7 +18,7 @@
   // total marks print 
   echo "Marks scored in units: $totalmarks <br>";
 // average marks print 
-  echo "average marks: $averagemarks";
+  echo "average marks: $averagemarks <br>";
 
 
   if ($averagemarks >= 0 && $averagemarks < 50) {
