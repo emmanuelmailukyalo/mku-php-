@@ -20,5 +20,18 @@
 // average marks print 
   echo "average marks: $averagemarks";
 
+
+  if ($averagemarks >= 0 && $averagemarks < 50) {
+    echo "Grade: Fail";
+  } else if ($averagemarks >= 50 && $averagemarks < 60) {
+    echo "Grade: Pass";
+  } else if ($averagemarks >= 60 && $averagemarks < 70) {
+    echo "Grade: Credit";
+  } else if ($averagemarks >= 70 && $averagemarks <= 100) {
+    echo "Grade: Distinction";
+  } else {
+    echo "Invalid marks entered.";
+  }
+
 ?>
  
