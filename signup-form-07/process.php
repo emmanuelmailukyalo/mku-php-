@@ -1,16 +1,23 @@
-<body>
-
-<h2>Customer order</h2>
 
 <?php
-// recieve data from form and assign to variables 
 
-$name = $_POST['name'];
-$registrationno  = $_POST['registrationno'];
-$coursetitle=$_POST['coursetitle'];
-$ITB =$_POST['ITB'];
+  $name = $_POST['name'];
+  $regno = $_POST['registrationno'];
+  $course = $_POST['coursetitle'];
+  $itb = $_POST['ITB'];
+  $itp = $_POST['itp'];
+  $ict = $_POST['ict'];
+  $ma = $_POST['ma'];
+  
+ $totalmarks = $ict+$itb+$itp+$ma;
+  
+  
+  echo "Full name: $name <br>";
+  echo "Registration number: $regno <br>";
+  echo "Course Title: $course <br>";
+  echo "Marks scored in units: <br>";
+  echo "Total marks: $totalmarks <br>";
+ 
 
-
-// print the details 
-
-echo "name:" . $name;
+?>
+ 
