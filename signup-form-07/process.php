@@ -19,8 +19,16 @@
 
     <title>Sign Up #7</title>
   </head>
-
-<div class="form-group first">
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="mb-4">
 <?php
 
   $name = $_POST['name'];
@@ -56,5 +64,13 @@
   }
 
 ?>
+</div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+  </div>
 </div>
 </html>
