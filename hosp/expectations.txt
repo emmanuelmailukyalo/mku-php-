@@ -1,0 +1,16 @@
+1.submit
+2.text
+3.email
+4.reset 
+5.radio
+6.select
+7.checkbox
+8.date
+
+hospital
+
+how much money the company uses  perday
+how much each dept uses,daily 
+which department spends the most money 
+the avarage every department uses daily,monthly,
+
