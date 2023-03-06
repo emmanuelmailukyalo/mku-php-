@@ -45,8 +45,7 @@ require_once('dbconnect.php');
   $ma = $_POST['ma'];
   $email = $_POST['email'];
   $date =$_POST['date'];
-  $yearofstudy =$_POST['YOS'];
-  $modeofstudy =$_POST['MOS '];
+  
 
  $totalmarks = $ict+$itb+$itp+$ma;
  $averagemarks = $totalmarks/4;
@@ -75,8 +74,8 @@ require_once('dbconnect.php');
   }
 
   // Insert data into database
-$sql = "INSERT INTO students (name, registrationno, coursetitle, ITB, itp, ict, ma, email, date, YOS, MOS) 
-VALUES ('$name', '$regno', '$course', '$itb', '$itp', '$ict', '$ma', '$email', '$date', '$yearofstudy', '$modeofstudy')";
+$sql = "INSERT INTO students (name, registrationno, coursetitle, ITB, itp, ict, ma, email, date) 
+VALUES ('$name', '$regno', '$course', '$itb', '$itp', '$ict', '$ma', '$email', '$date')";
 
 if ($conn->query($sql) === TRUE) {
 echo "New record created successfully";
