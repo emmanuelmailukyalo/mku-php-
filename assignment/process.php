@@ -39,10 +39,10 @@ require_once('dbconnect.php');
   $name = $_POST['name'];
   $regno = $_POST['registrationno'];
   $course = $_POST['coursetitle'];
-  $itb = $_POST['ITB'];
-  $itp = $_POST['itp'];
-  $ict = $_POST['ict'];
-  $ma = $_POST['ma'];
+  $intro_to_bs = $_POST['ITB'];
+  $intro_to_prog = $_POST['itp'];
+  $ict_in_bs = $_POST['ict'];
+  $mngmnt_accounts = $_POST['ma'];
   $email = $_POST['email'];
   $date =$_POST['date'];
   
@@ -74,13 +74,13 @@ require_once('dbconnect.php');
   }
 
   // Insert data into database
-$sql = "INSERT INTO students (name, registrationno, coursetitle, ITB, itp, ict, ma, email, date) 
+$sql = "INSERT INTO cat1 (name, registrationno, coursetitle, intro to Bs, intro to prog, Ict in bs, ma, mngmnt accounts, date) 
 VALUES ('$name', '$regno', '$course', '$itb', '$itp', '$ict', '$ma', '$email', '$date')";
 
-if ($conn->query($sql) === TRUE) {
+if ($myconn->query($sql) === TRUE) {
 echo "New record created successfully";
 } else {
-echo "Error: " . $sql . "<br>" . $conn->error;
+echo "Error: " . $sql . "<br>" . $myconn->error;
 }
 
 
