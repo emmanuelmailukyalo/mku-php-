@@ -34,6 +34,7 @@
 <?php
 
 require_once('dbconnect.php');
+echo "<br>";
 // receive data 
 
   $name = $_POST['name'];
@@ -73,8 +74,9 @@ require_once('dbconnect.php');
     echo "Invalid marks entered.";
   }
 
+  echo "<br>";
+  echo "<br>";
 
-  
   // Insert data into database
 $sql = "INSERT INTO cat1 (name, registrationno, coursetitle, ITB, itp, ict, ma, email, date) 
 VALUES ('$name', '$regno', '$course', '$itb', '$itp', '$ict', '$ma', '$email', '$date')";
