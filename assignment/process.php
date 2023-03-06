@@ -33,6 +33,9 @@
 
 <?php
 
+require_once('dbconnect.php');
+// receive data 
+
   $name = $_POST['name'];
   $regno = $_POST['registrationno'];
   $course = $_POST['coursetitle'];
