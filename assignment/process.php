@@ -74,10 +74,15 @@ require_once('dbconnect.php');
     echo "Invalid marks entered.";
   }
 
-  // insert details into database 
-  $insert = "INSERT INTO marks(name,registrationno,coursetitle,ITB,itp,ict,ma)
-  values('$name','$regno','$course','$itb','$itp','$ict','$ma')";
+  // Insert data into database
+$sql = "INSERT INTO students (name, registrationno, coursetitle, ITB, itp, ict, ma, email, date, YOS, MOS) 
+VALUES ('$name', '$regno', '$course', '$itb', '$itp', '$ict', '$ma', '$email', '$date', '$yearofstudy', '$modeofstudy')";
 
+if ($conn->query($sql) === TRUE) {
+echo "New record created successfully";
+} else {
+echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
 
 ?>
