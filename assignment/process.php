@@ -45,7 +45,9 @@ require_once('dbconnect.php');
   $ma = $_POST['ma'];
   $email = $_POST['email'];
   $date =$_POST['date'];
-  
+  $yearofstudy =$_POST['YOS'];
+  $modeofstudy =$_POST['MOS '];
+
  $totalmarks = $ict+$itb+$itp+$ma;
  $averagemarks = $totalmarks/4;
   
@@ -71,6 +73,12 @@ require_once('dbconnect.php');
   } else {
     echo "Invalid marks entered.";
   }
+
+  // insert details into database 
+  $insert = "INSERT INTO marks(name,registrationno,coursetitle,ITB,itp,ict,ma)
+  values('$name','$regno','$course','$itb','$itp','$ict','$ma')";
+
+
 
 ?>
 </div>
