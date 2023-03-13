@@ -15,7 +15,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Sign Up #7</title>
+    <title>view  #7</title>
 </head>
 <body>
     
