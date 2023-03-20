@@ -51,8 +51,19 @@ while($row = mysqli_fetch_array($result)) // fetch the row values
 $id=$row['id']; // id to reference specific record
 
 
-echo"</tr>";
-?>
+echo "<tr>";
+echo "<td>".$row['id']."</td>";
+echo "<td>".$row['customer']."</td>";
+echo "<td>".$row['product']."</td>";
+echo "<td>".$row['quantity']."</td>";
+echo "<td>".$row['price']."</td>";
+echo "<td>".$row['total']."</td>";
+echo"<td><a href='delete.php?id=$id'>Delete record</a></td>";// create link to delete.php  file
+echo "</tr>";
+}
+echo "</table>";
+?> 
+
 
 
 </body>
