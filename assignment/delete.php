@@ -1,17 +1,16 @@
 <?php
-require_once("dbconnect.php");
 
-$id=$_REQUEST['id'];
+require_once('dbconnect.php');
 
-$del=mysqli_query($myconn,"DELETE FROM orders WHERE id='$id'");
-if($del)
-{
-echo"Record Successfully Deleted!!";
+// Check if delete button is clicked
+if (isset($_POST['delete'])) {
+  $id = $_POST['id'];
+  $sql = "DELETE FROM cat1 WHERE id=$id";
+  if ($myconn->query($sql) === TRUE) {
+    echo "Record deleted successfully";
+  } else {
+    echo "Error deleting record: " . $myconn->error;
+  }
 }
-else
-{
-echo"Record Not Deleted!!";
-}
 
-echo "<a href='vieworders.php'> Go back to records list</a>";
 ?>
