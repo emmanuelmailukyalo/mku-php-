@@ -33,7 +33,7 @@ $row = mysqli_fetch_array($result);
 
 // create table headers 
 
-echo"<table records=1>";
+echo "<table border=1>";
 echo"<tr>";
 echo "<td>ID</td>";
 echo "<td>registrationno</td>";
@@ -44,9 +44,11 @@ echo "<td>delete</td>";
 echo"</tr>";
 
 
-echo"<tr>";
-// fetch and loop the records 
-while($row)
+echo "</tr>";
+// fetch and loop the records
+while($row = mysqli_fetch_array($result)) // fetch the row values
+{
+$id=$row['id']; // id to reference specific record
 
 
 echo"</tr>";
